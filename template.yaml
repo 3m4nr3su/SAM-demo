@@ -17,7 +17,7 @@ Globals:
   Function:
     Timeout: 60
     Architectures:
-      - arm64
+      - x86_64
 
   Api:
     MethodSettings:
@@ -48,7 +48,7 @@ Resources:
           Type: Api # More info about API Event Source: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#api
           Properties:
             Path: /hello
-            Method: post
+            Method: get
 
   DownstreamFunction:
     Type: AWS::Serverless::Function
